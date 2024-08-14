@@ -1,0 +1,93 @@
+﻿<UserControl x:Class="MarketPlatForm.wpf.Components.OrderComponent"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MarketPlatForm.wpf.Components"
+             xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="50" d:DesignWidth="800">
+    <Border Background="White" BorderThickness="0">
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.8*"/>
+                <ColumnDefinition Width="1.2*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="0.3*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock
+             x:Name="describtion_txt"
+             Text="Oqtepa lavash"
+             VerticalAlignment="Center"
+             HorizontalAlignment="Center"
+             FontSize="20"
+             FontWeight="Heavy"
+             ></TextBlock>
+            <Grid Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="1.5*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button
+                 x:Name="minus_btn"
+                    Click="minus_btn_Click"
+                 Background="Transparent"
+                 BorderThickness="0"
+                 Grid.Column="0">
+                    <md:PackIcon Kind="Minus" Width="40" Height="30"></md:PackIcon>
+                </Button>
+                <TextBlock 
+                 x:Name="count_txt"
+                 Grid.Column="1"
+                 Text="1"
+                 VerticalAlignment="Center"
+                 HorizontalAlignment="Center"
+                 FontSize="25"
+                 FontWeight="DemiBold"
+                 >
+
+                </TextBlock>
+                <Button
+                 x:Name="plus_btn"
+                    Click="plus_btn_Click"
+                 Background="Transparent"
+                 BorderThickness="0"
+                 Grid.Column="2"
+                 >
+                    <md:PackIcon Kind="Plus" Width="40" Height="30"></md:PackIcon>
+                </Button>
+            </Grid>
+            <TextBlock
+             x:Name="price_txt"
+             Grid.Column="2"
+             FontSize="20"
+             VerticalAlignment="Center"
+             HorizontalAlignment="Center"
+             FontWeight="DemiBold"
+             Text="10000.00"
+             ></TextBlock>
+
+            <TextBlock
+             x:Name="TotalPrice_txt"
+             Grid.Column="3"
+             Text="30000.00"
+             FontSize="20"
+             VerticalAlignment="Center"
+             HorizontalAlignment="Center"
+             FontWeight="DemiBold"
+             ></TextBlock>
+            <Button 
+             x:Name="delete_btn"
+             Background="Transparent"
+             BorderThickness="0"
+             Grid.Column="4">
+                <md:PackIcon Kind="Trash" Width="25" Height="25"
+                          Foreground="#B23B32"
+                          ></md:PackIcon>
+            </Button>
+        </Grid>
+    </Border>
+</UserControl>

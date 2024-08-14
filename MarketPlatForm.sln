@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPlatForm.Api", "MarketPlatForm.Api\MarketPlatForm.Api.csproj", "{FA8C77AF-8FE8-45FA-9D58-58A2A4D3A361}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPlatForm.wpf", "MarketPlatForm.wpf\MarketPlatForm.wpf.csproj", "{88EAA946-3D94-401B-BC9F-AAC46AA8E294}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA8C77AF-8FE8-45FA-9D58-58A2A4D3A361}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA8C77AF-8FE8-45FA-9D58-58A2A4D3A361}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA8C77AF-8FE8-45FA-9D58-58A2A4D3A361}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA8C77AF-8FE8-45FA-9D58-58A2A4D3A361}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88EAA946-3D94-401B-BC9F-AAC46AA8E294}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88EAA946-3D94-401B-BC9F-AAC46AA8E294}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88EAA946-3D94-401B-BC9F-AAC46AA8E294}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88EAA946-3D94-401B-BC9F-AAC46AA8E294}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {05598C15-BD93-479E-AF78-3EFCBEED581D}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,22 @@
+﻿<Application x:Class="MarketPlatForm.wpf.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:MarketPlatForm.wpf"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+
+
+                <ResourceDictionary Source="/Icons/ButtonIcons.xaml"/>
+
+                <ResourceDictionary Source="/Themes/DarkThemes.xaml"/>
+
+                <ResourceDictionary Source="/Styles/ButtonStyles.xaml"/>
+
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>

@@ -1,0 +1,168 @@
+﻿<Window x:Class="MarketPlatForm.wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MarketPlatForm.wpf"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        ResizeMode="CanMinimize"
+        Background="Transparent"
+        Title="MainWindow" Height="450" Width="800">
+    <Border Background="White" CornerRadius="10">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Border Grid.Row="0" CornerRadius="10 10 0 0" Background="{DynamicResource PrimarColor}">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="120"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Border
+                     Grid.Column="1">
+                        <StackPanel Orientation="Horizontal">
+                            <Button 
+                             x:Name="minimize_btn"
+                             Click="minimize_btn_Click"
+                             Style="{DynamicResource minimizeButton}"></Button>
+                            <Button
+                             x:Name="maximize_btn"
+                             Click="maximize_btn_Click"
+                             Style="{DynamicResource maximizeButton}"
+                             ></Button>
+                            <Button
+                             x:Name="close_btn"
+                             Click="close_btn_Click"
+                             Style="{DynamicResource closeButton}"
+                             ></Button>
+                        </StackPanel>
+                    </Border>
+
+                </Grid>
+            </Border>
+            <Border CornerRadius="0 0 0 10" Grid.Row="1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Border Grid.Column="0" Background="{DynamicResource SecondaryColor}">
+                        <StackPanel>
+
+                            <Button Margin="0 40 3 3"
+                             Style="{DynamicResource sideBarButton}">
+
+                                <Style/>
+                            </Button>
+                            <Button 
+                                x:Name="Category_btn"
+                                Click="Category_btn_Click"
+                                Style="{DynamicResource sideBarButton2}"
+                                 ></Button>
+                            <Button
+                             Style="{DynamicResource sideBarButton3}"></Button>
+
+                            <Button
+                            
+                             Style="{DynamicResource sideBarButton4}"></Button>
+                            <Button
+                             x:Name="Settings_btn"
+                             Click="Settings_btn_Click"
+                             Style="{DynamicResource sideBarButton5}"></Button>
+                        </StackPanel>
+                    </Border>
+                    <Border Grid.Column="1">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1.5*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid  Grid.Column="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="60"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Border Grid.Row="0">
+
+
+                                    <Frame x:Name="CategoryNavigator" NavigationUIVisibility="Hidden"/>
+
+
+                                </Border>
+
+                                <Border Background="#fff" Grid.Row="1">
+
+                                    
+                                    <Frame x:Name="productnavigator" NavigationUIVisibility="Hidden"/>
+
+
+
+                                </Border>
+
+                            </Grid>
+                            <Border Grid.Column="1" BorderBrush="DarkBlue" BorderThickness="1">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="80"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid Grid.Row="0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="1.8*"/>
+                                            <ColumnDefinition Width="1.2*"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="0.3*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock  Grid.Column="0"
+                                                 Text="Describtion"
+                                                 FontSize="15"
+                                                 FontWeight="DemiBold"
+                                                 HorizontalAlignment="Center"
+                                                 VerticalAlignment="Center"
+                                                 ></TextBlock>
+                                        <TextBlock Grid.Column="1"
+                                                Text="Count"
+                                                  FontSize="15"
+                                                  FontWeight="DemiBold"
+                                                  HorizontalAlignment="Center"
+                                                  VerticalAlignment="Center"
+                                                >
+                                        </TextBlock>
+
+                                        <TextBlock
+                                         Grid.Column="2"
+                                         Text="Price"
+                                         FontSize="15"
+                                         VerticalAlignment="Center"
+                                         HorizontalAlignment="Left"
+                                         FontWeight="DemiBold"
+                                         ></TextBlock>
+
+                                        <TextBlock 
+                                            
+                                         Grid.Column="3"
+                                         Text="TotalPrice"
+                                         VerticalAlignment="Center"
+                                         HorizontalAlignment="Left"
+                                         FontSize="15"
+                                         FontWeight="DemiBold"
+                                         ></TextBlock>
+                                    </Grid>
+                                    <Border Grid.Row="1">
+                                        <Frame x:Name="OrderNavigator" NavigationUIVisibility="Hidden"/>
+                                    </Border>
+                                </Grid>
+                            </Border>
+                        </Grid>
+                    </Border>
+                </Grid>
+            </Border>
+        </Grid>
+    </Border>
+</Window>
