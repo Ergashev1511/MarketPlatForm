@@ -28,6 +28,7 @@ namespace MarketPlatForm.wpf
             this.WindowState=WindowState.Minimized;
         }
 
+
         private void maximize_btn_Click(object sender, RoutedEventArgs e)
         {
             if(this.WindowState==WindowState.Maximized)
