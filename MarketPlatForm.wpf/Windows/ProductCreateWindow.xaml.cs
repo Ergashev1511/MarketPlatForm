@@ -51,10 +51,15 @@ namespace MarketPlatForm.wpf.Windows
         private void image_upload_btn_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.ShowDialog();
-            openFileDialog.Multiselect = true;
-            imagePath = openFileDialog.FileName;
-            openFileDialog.OpenFiles();
+            openFileDialog.Filter = "JPG Files (*.jpg)|*.jpg|JPEG Files (*.jpeg)|*.jpeg|PNG Files (*.png)|*.png";
+            if (openFileDialog.ShowDialog() == true)
+            {
+                 imagePath = openFileDialog.FileName;
+               // ImgStorage.ImageSource = new BitmapImage(new Uri(imgPath, UriKind.Relative));
+               // ImgIcon.Visibility = Visibility.Hidden;
+            }
+            //ImgIcon.Visibility = Visibility.Hidden;
+
         }
 
         private async void Save_btn_Click(object sender, RoutedEventArgs e)
