@@ -15,7 +15,7 @@
             </Grid.RowDefinitions>
             <Border Grid.Row="0">
                 <Border CornerRadius="60" Width="160" Height="150" Margin="40 15 40 10">
-                    <Image x:Name="MyImage"/>
+                    <Image x:Name="MyImage" Stretch="Uniform"/>
                 </Border>
             </Border>
             <StackPanel Grid.Row="1">

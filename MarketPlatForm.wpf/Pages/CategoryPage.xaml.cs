@@ -42,7 +42,7 @@ namespace MarketPlatForm.wpf.Pages
                 CategoryComponent category = new CategoryComponent();
                 category.Tag = c.Id;
                 category.setdata(c);
-                category.Margin=new Thickness(5, 0, 5, 2);
+                category.Margin=new Thickness(5, 15, 5, 2);
                 Category_list.Children.Add(category);
             }
 

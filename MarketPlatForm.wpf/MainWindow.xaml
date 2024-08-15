@@ -84,7 +84,7 @@
                             </Grid.ColumnDefinitions>
                             <Grid  Grid.Column="0">
                                 <Grid.RowDefinitions>
-                                    <RowDefinition Height="60"/>
+                                    <RowDefinition Height="100"/>
                                     <RowDefinition Height="*"/>
                                 </Grid.RowDefinitions>
                                 <Border Grid.Row="0">
